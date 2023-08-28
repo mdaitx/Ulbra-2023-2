@@ -1,21 +1,23 @@
 <?php
 
-require_once $_SERVER ['DOCUMENT_ROOT'] . '/aula3/model/EstudanteModel.php';
+require_once $_SERVER ['DOCUMENT_ROOT'] . '/'. FOLDER . '/model/EstudanteModel.php';
 
 class EstudanteController{
+
+    const CONTROLLER_FOLDER = '/estudante';
     public function listar() {
         $estudanteModel = new EstudanteModel();
         $estudantes = $estudanteModel->listarModel();
         $_REQUEST['estudantes'] = $estudantes;
 
         //render na view
-        require_once $_SERVER ['DOCUMENT_ROOT'] . '/aula3/view/EstudanteView.php';
+        require_once $_SERVER ['DOCUMENT_ROOT'] . '/'. FOLDER . '/view' . self::CONTROLLER_FOLDER . '/EstudanteView.php';
     }
 
     public function Salvar()
     {
         if($_SERVER['REQUEST_METHOD'] == 'GET') {
-            require_once $_SERVER ['DOCUMENT_ROOT'] . '/aula3/view/EstudanteForm.php';
+            require_once $_SERVER ['DOCUMENT_ROOT'] . '/'. FOLDER . '/view' . self::CONTROLLER_FOLDER . '/EstudanteForm.php';
         } elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $nome = $_POST['nome'];
             $idade = $_POST['idade'];
@@ -23,7 +25,7 @@ class EstudanteController{
             $estudanteModel = new EstudanteModel();
             $estudanteModel->salvarModel($nome, $idade);
 
-            header('Location: http://localhost:8081/aula3/?controller=Estudante&acao=listar');
+            header('Location: http://localhost:8081/' . FOLDER . '/?controller=Estudante&acao=listar');
             exit();
         } 
 
