@@ -41,7 +41,7 @@ $estudantes = $_REQUEST["estudantes"]; ?>
         </div>
       </nav>
     <div class="container-fluid bg-secondary vh-100 pt-4">
-       
+    
     <div class=" d-grid col-2 mx-auto">
         <a href="/aula3/?controller=Estudante&acao=salvar" class="btn btn-success">Cadastrar Estudante</a>
     </div>
@@ -68,12 +68,11 @@ $estudantes = $_REQUEST["estudantes"]; ?>
                 </tr>
             <?php } ?>
         </table>
-
-        <img class="rounded mx-auto d-block col-4 "
+        
+        <img class="rounded mx-auto d-block col-4"
             src="https://s3.static.brasilescola.uol.com.br/be/2022/09/dia-da-luta-pcd.jpg" class="img-thumbnail"
-            alt="Representação ilustrada de grupo de pessoas e um cachorro, com objetivo de inclusão social">
+            alt="Representação ilustrada de grupo de pessoas e um cachorro, com objetivo de inclusão social">  
     </div>
-
     <footer class="container-fluid text-center bg-dark p-5"></footer>
 
     <div vw class="enabled">

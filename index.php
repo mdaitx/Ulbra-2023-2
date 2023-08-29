@@ -4,7 +4,7 @@ const FOLDER = 'aula3';
 
 if(isset( $_GET['controller']) && isset( $_GET['acao'])){
     $controller = $_GET['controller'];
-    $metodo = $_GET['acao'];
+    $metodo = $_GET['acao']; 
     $controller .= 'Controller';
 
    

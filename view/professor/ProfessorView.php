@@ -74,7 +74,7 @@ $professores = $_REQUEST["professores"]; ?>
             alt="Representação ilustrada de grupo de pessoas e um cachorro, com objetivo de inclusão social">
     </div>
 
-    <footer class="container-fluid text-center bg-dark p-5"></footer>
+    <footer class="container-fluid text-center bg-dark p-4"></footer>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
