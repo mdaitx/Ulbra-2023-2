@@ -1,5 +1,5 @@
 <?php 
-$estudante = $_REQUEST['estudante']; 
+$estudante = $_REQUEST['professor']; 
 ?>
 
 <!DOCTYPE html>
