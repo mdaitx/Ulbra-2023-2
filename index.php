@@ -1,6 +1,6 @@
 <?php
 
-const FOLDER = 'aula3';
+const FOLDER = 'ap1';
 
 if(isset( $_GET['controller']) && isset( $_GET['acao'])){
     $controller = $_GET['controller'];
